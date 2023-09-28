@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <script defer src="/src/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script>
+            (function() {
+                emailjs.init("hbzDBJHoMITkb7lWP");
+            })();
+        </script>
+        <title>Contact Me!</title>
+    </head>
+    <body>
+        <div class="navbar">
+			<a href="https://englandz.github.io/index.html">Home</a>
+  			<a href="https://englandz.github.io/aboutMe.html">About Me</a>
+  			<a href="https://mattm401.github.io/">Course Page</a>
+  			<a class="active" href="https://englandz.github.io/contact.html">Contact Me!</a>
+			<a href="https://teric622.github.io/">Previous Student</a>
+			<a href="https://estipes.github.io/">Next Student</a>
+		</div>
+        <h1>Contact Me!</h1>
+        <br>
+        <div class="center" >
+            <form id="contact-form" onsubmit="return false">
+                <input type="text" placeholder="Last Name" name="user_lname" id="user_lname">
+                <br><br>
+                <input type="text" placeholder="First Name" name="user_fname" id="user_fname">
+                <br><br>
+                <input type="text" placeholder="Email" name="user_email" id="user_email">
+                <!-- Using text above so I can contorl custom error message-->
+                <br><br>
+                <input type="tel" id="user_phone" name="user_phone" placeholder="Phone Number">
+                <br><br>
+                <span>Write Your Message Below!</span>
+                <br>
+                <textarea name="user_message" id="user_message" placeholder="I'd love to hear from you!" rows="8" cols="60"></textarea>
+                <br><br>
+                <button id="submit">Submit!</button>
+                <p id="error"></p>
+                <p id="success"></p>
+            </form>
+        </div>
+    </body>
+</html>

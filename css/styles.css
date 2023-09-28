@@ -1,1 +1,48 @@
-example text
+.navbar {
+  overflow: hidden;
+  background-color: grey;
+}
+
+.navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar a.active {
+  background-color: indigo;
+  color: white;
+}
+ul.circle {
+  list-style-type: circle;
+}
+.lower-right { 
+  position: absolute; 
+  right: 8px; 
+  bottom: 8px; 
+} 
+.lower-left { 
+  position: absolute; 
+  left: 8px; 
+  bottom: 8px; 
+}
+.lower-center { 
+  position: absolute; 
+  left: 50%; 
+  bottom: 8px; 
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+#error {
+  color: red;
+}
